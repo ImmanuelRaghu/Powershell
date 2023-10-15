@@ -29,12 +29,12 @@
 
         # Filter time zones by name if 'Name' parameter is provided
         if ($Name) {
-            $timeZonesDatanew = $timeZonesData | Where-Object { $_.Name -like "*$Name*" }
+            $timeZonesDataresult = $timeZonesDatanew | Where-Object { $_.Name -like "*$Name*" }
         }
 
         # Filter time zones by offset if 'Offset' parameter is provided
         if ($Offset) {
-            $timeZonesDatanew = $timeZonesData | Where-Object { $_.Offset -eq $Offset }
+            $timeZonesDatanewresult = $timeZonesDatanew | Where-Object { $_.Offset -eq $Offset }
         }
 
         $timeZonesDatanew
@@ -45,7 +45,7 @@
     }
 }
 
-$timeZonesDatanew = Get-CommonTimeZone
+$timeZonesDatanewresult  = Get-CommonTimeZone
 
 
 # NB: the git hub link which is provided is not working to test the script  
