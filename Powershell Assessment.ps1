@@ -29,7 +29,7 @@
 
         # Filter time zones by name if 'Name' parameter is provided
         if ($Name) {
-            $timeZonesDataresult = $timeZonesDatanew | Where-Object { $_.Name -like "*$Name*" }
+            $timeZonesDatanewresult = $timeZonesDatanew | Where-Object { $_.Name -like "*$Name*" }
         }
 
         # Filter time zones by offset if 'Offset' parameter is provided
