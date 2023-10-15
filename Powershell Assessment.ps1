@@ -24,7 +24,7 @@
         # Download the JSON data from the URL
         $timeZonesData = Invoke-RestMethod -Uri $jsonUrl -UseBasicParsing -ErrorAction Stop
         
-        # convett from Json data into pharse
+        # convert from Json data into pharse
         $timeZonesDatanew =$timeZonesData | ConvertFrom-Json
 
         # Filter time zones by name if 'Name' parameter is provided
