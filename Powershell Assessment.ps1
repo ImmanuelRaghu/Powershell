@@ -37,7 +37,7 @@
             $timeZonesDatanewresult = $timeZonesDatanew | Where-Object { $_.Offset -eq $Offset }
         }
 
-        $timeZonesDatanew
+        $timeZonesDatanewresult
     }
     catch {
         Write-Error "Failed to retrieve time zone data from GitHub. Please check your internet connection."
