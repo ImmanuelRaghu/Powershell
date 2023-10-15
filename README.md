@@ -1,2 +1,0 @@
-# Powershell
-powershell Assignment 
